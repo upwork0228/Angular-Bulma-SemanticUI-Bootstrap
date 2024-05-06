@@ -1,0 +1,25 @@
+/* @import "semantic-ui-css/semantic.css"; */
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 2rem auto 1rem;
+    max-width: 500px;
+    width: 95%;
+    /* padding-bottom: 1rem; */
+}
+
+.container button{
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 1408px){
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 500px;
+    }
+
+}
+
+

@@ -1,0 +1,39 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 2rem auto 0rem;
+    width: 95%;
+    max-width: 500px;
+    padding-bottom: 1rem;
+}
+
+.container-btn{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+    padding: 0 12px;
+}
+
+@media (max-width: 500px){
+    .container-btn{
+        padding: 0 24px;
+    }
+}
+
+
+@media screen and (min-width: 1216px){
+
+    .container:not(.is-max-desktop) {
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1408px){
+
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 500px;
+    }
+}

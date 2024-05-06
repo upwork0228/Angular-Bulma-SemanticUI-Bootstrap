@@ -1,0 +1,32 @@
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.nav{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1{
+    padding-top: 1rem;
+    letter-spacing: 2px;
+}
+
+.active{
+    background: #522a96;
+    color: white;
+}
+
+.toolBar{
+    width: 100%;
+}
+
+@media  (max-width: 430px) {
+    a{
+        font-size: 12px;
+        padding: 0 6px;
+    }
+  }

@@ -1,0 +1,44 @@
+
+.form {
+    margin: 2rem auto 0.5rem;
+    max-width: 500px;
+    width: 95%;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.county{
+    width: 30%;
+}
+
+.tel{
+    width: 67%;
+}
+
+.textArea{
+    min-height: 100px;
+}
+
+.btn{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    letter-spacing: 2px;
+    margin: 0 auto 1rem;
+    padding: 10px 0;
+}
+
+@media (max-width: 500px){
+    .btn{
+        width: 95%;
+        margin: 0 auto 1rem;
+    }
+}

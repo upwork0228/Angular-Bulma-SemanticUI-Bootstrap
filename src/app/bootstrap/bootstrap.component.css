@@ -1,0 +1,32 @@
+
+.container{
+    margin: 2rem auto 0;
+    max-width: 500px;
+    width: 95%;
+    padding-bottom: .5rem;
+}
+
+.row{
+    margin-bottom: 1rem;
+}
+
+.container-btn{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 1rem;
+    padding: 0 12px;
+}
+
+@media screen and (max-width: 500px){
+    .container-btn{
+        padding: 0 22px;
+    }
+}
+
+@media screen and (min-width: 1408px){
+    .container:not(.is-max-desktop):not(.is-max-widescreen) {
+        max-width: 500px;
+    }
+
+}
+

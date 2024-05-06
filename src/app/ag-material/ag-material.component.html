@@ -1,0 +1,72 @@
+<form class="form">
+    
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Create Username
+        </mat-label>
+        <input matInput placeholder="Min 3 characters">    
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>First Name
+        </mat-label>
+        <input matInput placeholder="Ex. Anna">
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Last Name
+        </mat-label>
+        <input matInput placeholder="Ex. Brown">
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Email
+        </mat-label>
+        <input type="email" matInput placeholder="Ex. pat@example.com">
+    </mat-form-field>
+
+    <div class="group">
+        <mat-form-field appearance="fill" class="county">
+            <mat-select placeholder="Choose country">
+                <mat-option value="+420">CZ +420</mat-option>
+                <mat-option value="+421">SK +421</mat-option>
+            </mat-select>
+    
+            
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill" class="tel">
+            <mat-label>Tel</mat-label>
+            <input type="tel" matInput placeholder="Ex. 904 365 448">
+            
+        </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Password
+        </mat-label>
+        <input type="password" matInput [type]="hide ? 'password' : 'text'">
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Confirm password
+        </mat-label>
+        <input type="password" matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" class="full-width">
+        <mat-label>Leave a message</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..." class="textArea"></textarea>
+    </mat-form-field>
+
+    <mat-checkbox color="primary">I accept the Terms &amp; Conditions</mat-checkbox>
+
+
+    
+</form>
+
+<button mat-raised-button color="primary" class="btn">Register account</button>
+
+
